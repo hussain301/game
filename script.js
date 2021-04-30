@@ -10,7 +10,7 @@ document.querySelector('.check').addEventListener('click',
 function (){
   const valu = Number(document.querySelector('.guess').value);
   if(!valu)document.querySelector('.message').textContent = '⛔ No number!.';
-  if(valu===randomNumber){
+else if(valu===randomNumber){
       document.querySelector('.number').textContent = randomNumber;
       document.querySelector('.message').textContent = '🎉 Correct Number!'
       document.querySelector('body').style.backgroundColor = "#60b347";
