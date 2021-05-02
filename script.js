@@ -18,7 +18,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').style.width = '30rem';
     if (highscore < score) highscore = score;
     document.querySelector('.highscore').textContent = highscore;
-//   } else if (valu !== randomNumber) {
+  } else if (valu !== randomNumber) {
     if (score >= 1) {
       displayMessage(valu > randomNumber ? '📉 Too high!' : '📉 Too low!');
       score--;
